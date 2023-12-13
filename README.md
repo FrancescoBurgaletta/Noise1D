@@ -9,5 +9,8 @@ This is how it works:
 2. A 5th degree polynomial is then constructed from the previously obtained 6 values, which make this polynomial unique. The polynomial is constructed on 0 and 1 as grid points to simplify the computation of the parameters.
 3. The fractional part of the input value is computed and fed to the polynomial to give the final result.
 
+Here is the result:
+![plot](https://github.com/FrancescoBurgaletta/Noise1D/assets/143550199/a11301f4-de90-432f-97e4-f805eaf56040)
+
 ## WARNING
 The implemented noise function provides values tht are slightly above 1 and below -1, so an accurate analysis on the analytical properties of the function must take place to provide upper and lower bounds such that the function will be tightly bounded within [-1,1].
