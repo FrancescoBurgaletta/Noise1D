@@ -1,7 +1,7 @@
 # A simple 1D procedural noise function
 
 This is a simple implementation of a one dimensional procedural noise function, mostly useful in graphics to generate seamless textures and all sorts of effects. Here i wanted to comprehend the basic concepts that are fundamental to anyone undertaking the task of creating procedural textures.
-Many kinds of (noise functions)[https://physbam.stanford.edu/cs448x/old/Procedural_Noise(2f)Categories.html] exist: value noise interpolates values sampled on integer grid points in a pseudorandom fashion with a cubic polynomial, gradient noise does the same thing but with the first derivative (Perlin noise and Simplex noise are two examples of gradient noise), value-gradient noise samples both the value and the first derivative.
+Many kinds of [noise functions](https://physbam.stanford.edu/cs448x/old/Procedural_Noise(2f)Categories.html) exist: value noise interpolates values sampled on integer grid points in a pseudorandom fashion with a cubic polynomial, gradient noise does the same thing but with the first derivative (Perlin noise and Simplex noise are two examples of gradient noise), value-gradient noise samples both the value and the first derivative.
 This noise function not only samples both the value and the first derivative, but also the second derivative, which is crucial for the seamlessness of optical effects on the texture surface.
 This is how it works:
 
