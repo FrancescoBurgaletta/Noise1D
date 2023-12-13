@@ -22,7 +22,7 @@ double noise(double x) {
 	double e = -15 * a + 7 * b - c;
 	double f = 10 * a - 4 * b + 0.5 * c;
 	
-	return x * (x * (x * (x * (x * d + e) + f) + 0.5 * c0) + s0) + y0;
+	return (x * (x * (x * (x * (x * d + e) + f) + 0.5 * c0) + s0) + y0) / 1.34375;
 }
 
 double hash(unsigned long long int x) {
