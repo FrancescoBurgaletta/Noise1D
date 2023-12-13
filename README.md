@@ -11,7 +11,11 @@ This noise function not only samples both the value and the first derivative, bu
 3. The fractional part of the input value is computed and fed to the polynomial to give the final result.
 
 Here is how the noise looks from 0 to 50:
-![plot](https://github.com/FrancescoBurgaletta/Noise1D/assets/143550199/a11301f4-de90-432f-97e4-f805eaf56040)
+![plot](https://github.com/FrancescoBurgaletta/Noise1D/assets/143550199/c45c1678-6b75-4a00-9cd7-aa7fa5b3c798)
+
+<!--![plot](https://github.com/FrancescoBurgaletta/Noise1D/assets/143550199/a11301f4-de90-432f-97e4-f805eaf56040)-->
 
 ## WARNING
-The implemented noise function provides values that are slightly above 1 and below -1, so an accurate analysis on the analytical properties of the function must take place to provide upper and lower bounds such that the function will be scaled within [-1,1].
+The implemented noise function, like many other implementations, provides values that are slightly above 1 and below -1, so, in general, an accurate analysis on the analytical properties of the function must take place to provide upper and lower bounds such that the function will be scaled within [-1,1].
+
+For now, the value 1.34375 seems to be the correct scaling factor, but further investigation might be needed.
