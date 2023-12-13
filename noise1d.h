@@ -1,3 +1,3 @@
 double noise(double);
 
-double prng(unsigned long long int);
+double hash(unsigned long long int);
